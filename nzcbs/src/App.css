@@ -5,11 +5,60 @@
   text-align: justify;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  background-color: #373737de;
+  color: #fffcf4;
+}
+
 .header-image {
-  width: 20vw;
-  margin: 0 auto;
+  width: 5rem;
 }
 
 .cls-1 {
-  fill: #61dafb;
+  fill: #fffcf4;
+}
+
+.landing,
+.info {
+  padding: 0 2rem;
+}
+.info {
+  padding-bottom: 5rem;
+}
+.contact {
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #373737;
+  color: #fffcf4;
+  width: 100vw;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+}
+.contact-quote {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
 }

@@ -1,28 +1,35 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import headerImage from '../assets/header-image.svg';
 import '../App.css';
 
 function Nav() {
   return (
     <>
-      <div className='nav-title'>
-        <h1>NZCBS</h1>
-      </div>
-      <div className='nav-links-wrapper'>
-        <a className='nav-link' href=''>
-          INFO
-        </a>
-        <a className='nav-link' href=''>
-          REGISTRATION
-        </a>
-        <a className='nav-link' href=''>
-          DONATIONS
-        </a>
-        <a className='nav-link' href=''>
-          TALKS
-        </a>
-        <a className='nav-link' href=''>
-          CONTACT
-        </a>
-      </div>
+      <nav className='nav'>
+        <div className='nav-title'>
+          <Link className='title-link' to='/home'>
+            <p>NZCBS</p>
+          </Link>
+        </div>
+        <div className='header-image'>
+          <img src={headerImage} alt='' />
+        </div>
+        <div className='nav-links-wrapper'>
+          <Link className='nav-link' to='/info'>
+            <p>INFO</p>
+          </Link>
+          <Link className='nav-link' to='/registration'>
+            <p>REGISTRATION</p>
+          </Link>
+          <Link className='nav-link' to='/donations'>
+            <p>DONATIONS</p>
+          </Link>
+          <Link className='nav-link' to='/talks'>
+            <p>TALKS</p>
+          </Link>
+        </div>
+      </nav>
     </>
   );
 }
