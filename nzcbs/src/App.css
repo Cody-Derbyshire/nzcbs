@@ -1,8 +1,16 @@
+:root {
+  --light: #fffcf4;
+  --dark: #373737;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-align: justify;
+}
+
+body {
+  height: 100%;
 }
 
 a {
@@ -21,8 +29,9 @@ a:hover {
   justify-content: space-between;
   padding: 0 2rem;
   align-items: center;
-  background-color: #373737de;
-  color: #fffcf4;
+  background-color: var(--dark);
+  color: var(--light);
+  margin-bottom: 2rem;
 }
 
 .header-image {
@@ -30,7 +39,34 @@ a:hover {
 }
 
 .cls-1 {
-  fill: #fffcf4;
+  fill: var(--light);
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  gap: 2rem;
+}
+.landing-heading {
+  text-align: center;
+}
+.speaker-card-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.speaker-card {
+  background-color: white;
+  border: solid 0.1rem var(--dark);
+  border-radius: 1rem;
+  padding: 0.25rem 1rem 1rem 1rem;
+  filter: drop-shadow(-0.5rem 0.5rem 0rem #373737);
+}
+.speaker-name {
+  font-size: 2rem;
 }
 
 .landing,
@@ -44,17 +80,31 @@ a:hover {
   padding: 1rem;
   position: fixed;
   bottom: 0;
-  background-color: #373737;
-  color: #fffcf4;
-  width: 100vw;
-}
-.contact-info {
+  background-color: var(--dark);
+  color: var(--light);
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.contact-quote {
+.contact-text {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.contact-quote {
+  font-size: smaller;
+}
+.contact-btn {
+  background-color: var(--light);
+  padding: 0.5rem 1rem;
+  color: var(--dark);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links-wrapper {

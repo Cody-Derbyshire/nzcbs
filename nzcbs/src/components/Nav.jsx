@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import headerImage from '../assets/header-image.svg';
+import headerImage from '../assets/header-image-light.svg';
 import '../App.css';
 
 function Nav() {
